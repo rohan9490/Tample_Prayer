@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" contnt="width=device-width, initial-scale=1.0">
-    <title>Embed PDFs in HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moncton Hindu Temple</title>
     <style>
-    #myPDF{
-      width: 85%;
-      height: 975px;
-    }
+        body {
+            background-color: #FF9933; /* Saffron color */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        #pdfLink {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #businessCardLink {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            color: white;
+            text-decoration: none;
+        }
     </style>
-  </head>
-  <body>
-   <iframe id="myPDF" src="Resume_Rohan-Bhavsar.pdf" framborder="0"></iframe>
-    </body>
+</head>
+<body>
+    <div class="container">
+        <img src="Hindu.png" alt="Your Image" target="https://hindusocietynewbrunswick.com/"> 
+        <h1>Welcome to Temple</h1>
+        <p id="pdfLink"><a href="Tample_aarti.pdf" target="_blank">Press here for Aarti book</a></p>
+    </div>
+    <a href="path/to/your/business_card_url" id="businessCardLink" target="_blank">Business Card</a>
+</body>
 </html>
